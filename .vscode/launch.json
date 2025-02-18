@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:S_Triangle}",
+            "name": "Debug SierpinskiSwift",
+            "program": "${workspaceFolder:S_Triangle}/.build/debug/SierpinskiSwift",
+            "preLaunchTask": "swift: Build Debug SierpinskiSwift"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:S_Triangle}",
+            "name": "Release SierpinskiSwift",
+            "program": "${workspaceFolder:S_Triangle}/.build/release/SierpinskiSwift",
+            "preLaunchTask": "swift: Build Release SierpinskiSwift"
+        }
+    ]
+}
