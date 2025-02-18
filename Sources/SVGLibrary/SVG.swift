@@ -8,7 +8,6 @@
 import Foundation
 
 open class SVG {
-    // YOUR CODE HERE
     private var svgString: String =  ""
     private let fileManager = FileManager.default
     
@@ -19,7 +18,10 @@ open class SVG {
         svgString += "<svg version=\"1.1\" baseProfile=\"full\" width=\"\(width)\" height=\"\(height)\" xmlns=\"http://www.w3.org/2000/svg\">\n"
     }
     
-    // YOUR CODE HERE
+    public func drawLine(x1: Int, y1: Int, x2: Int,  y2: Int) {
+        svgString  += "<line x1=\"\(x1)\" y1=\"\(y1)\" x2=\"\(x2)\" y2=\"\(y2)\" stroke=\"Black\" />\n"
+    }
+
     
     // Write the SVG file to disk
     public func write(filePath: String) {
