@@ -19,7 +19,7 @@ open class SVG {
     }
     
     public func drawLine(x1: Int, y1: Int, x2: Int,  y2: Int) {
-        svgString  += "<line x1=\"\(x1)\" y1=\"\(y1)\" x2=\"\(x2)\" y2=\"\(y2)\" stroke=\"Black\" />\n"
+        svgString  += "<line x1=\"\(x1)\" y1=\"\(y1)\" x2=\"\(x2)\" y2=\"\(y2)\" stroke=\"black\" />\n"
     }
 
     
