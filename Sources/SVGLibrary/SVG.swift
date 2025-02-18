@@ -25,6 +25,7 @@ open class SVG {
     
     // Write the SVG file to disk
     public func write(filePath: String) {
+        svgString +=  "</svg>\n"
         let svgData: Data? = svgString.data(using: .utf8) 
 
         let file = fileManager.createFile(atPath: filePath, contents: svgData, attributes: nil)
